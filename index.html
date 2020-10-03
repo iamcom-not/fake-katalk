@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Welcome to KakaoTalk</title>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- status bar -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -22,13 +24,14 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
+    <!-- welcome header -->
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
       <p class="welcome-header__text">
         If you have a Kakao Account, log in with your email or phone number.
       </p>
     </header>
+    <!-- login form -->
     <!-- get은 보안에 취약해서 사실 아이디패스워드에 사용하면 안됨 post사용해야함 하지만 지금은 백앤드가 없어서 일단 적어놈 -->
     <!-- 그리고 지금 업로드할 곳은 only get만 보이는 머그런 -->
     <form class="login-form" action="friends.html" method="get">
@@ -47,10 +50,20 @@
         placeholder="Password"
       />
       <input class="login-form__btn" type="submit" value="Log In" />
-      <input class="login-form__btn" type="submit" value="Sign Up" />
+      <input
+        class="login-form__btn"
+        type="button"
+        value="Sign Up"
+        onclick="goToSignUp()"
+      />
       <a class="login-form__a" href="#">Find kakao Account or Password</a>
     </form>
 
+    <script>
+      function goToSignUp() {
+        window.location = "signup.html";
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigion="anonymous"
