@@ -2,7 +2,7 @@
 .status-bar {
   display: flex;
   justify-content: center;
-  padding: 5px 3px;
+  padding: 5px 4px;
   position: fixed;
   top: 0;
   width: 100%;
