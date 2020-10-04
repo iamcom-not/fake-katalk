@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chats - KakaoTalk</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- status bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>11:11</span>
+      </div>
+      <div class="status-bar__column">
+        <span>25%</span>
+        <i class="fas fa-battery-quarter"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- screen-header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Chats</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-comment-medical fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- user-component -->
+    <main class="main-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/my.jpg"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__tittle">.com</h4>
+            <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
+            <h6 class="user-component__subtitle">
+              Please check my Kakao Account Info
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">12:34</span>
+          <!-- <div class="badge">1</div> -->
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/2.jpg"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__tittle">(알수없음)</h4>
+            <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
+            <h6 class="user-component__subtitle">...</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">12:34</span>
+          <div class="badge">1</div>
+        </div>
+        <!-- 3 -->
+      </div>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/korea.jpg"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__tittle">김한국</h4>
+            <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
+            <h6 class="user-component__subtitle">야</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__time">12:34</span>
+          <div class="badge">99</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- navigation bar -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html"
+            ><span class="nav__notification badge">1</span>
+            <i class="fas fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html"
+            ><span class="nav__new"></span
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigion="anonymous"
+    ></script>
+  </body>
+</html>
