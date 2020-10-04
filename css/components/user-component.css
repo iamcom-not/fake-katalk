@@ -46,3 +46,12 @@
   margin-bottom: 10px;
   display: block;
 }
+.user-component__info {
+  display: flex;
+  align-items: center;
+}
+.user-component__info span {
+  margin-left: 10px;
+  color: tomato;
+  opacity: 0.8;
+}

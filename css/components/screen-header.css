@@ -2,8 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--horizontal-space);
+  padding: 40px var(--horizontal-space);
   margin-bottom: 15px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .screen-header__title {
@@ -19,8 +22,14 @@
   position: relative;
 }
 
-.screen-header__icons .badge-s {
+.screen-header__icons-sec {
   position: absolute;
   left: 90px;
+  bottom: 15px;
+}
+
+.screen-header__icons-thi {
+  position: absolute;
+  left: 135px;
   bottom: 15px;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - KakaoTalk</title>
+    <title>More - KakaoTalk</title>
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -26,77 +26,70 @@
 
     <!-- screen-header -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-comment-medical fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"> <i class="fas fa-cog fa-lg"></i></a
+        ></span>
+        <div class="screen-header__icons-thi badge badge-s"></div>
       </div>
     </header>
-
-    <!-- user-component -->
+    <!-- main screen -->
     <main class="main-screen">
-      <!-- 일단 얘만 -->
-      <a href="chat.html">
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/my.jpg"
-              class="user-component__avatar user-component__avatar"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__tittle">.com</h4>
-              <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
-              <h6 class="user-component__subtitle">
-                Please check my Kakao Account Info
-              </h6>
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/my.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__tittle">.com</h4>
+            <div class="user-component__info">
+              <h6 class="user-component__subtitle">+82 010-1234-5678</h6>
+              <span><i class="fas fa-info-circle"></i></span>
             </div>
           </div>
-          <div class="user-component__column">
-            <span class="user-component__time">12:34</span>
-            <!-- <div class="badge">1</div> -->
-          </div>
-        </div>
-      </a>
-      <!-- 2 -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/2.jpg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__tittle">(알수없음)</h4>
-            <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
-            <h6 class="user-component__subtitle">...</h6>
-          </div>
         </div>
         <div class="user-component__column">
-          <span class="user-component__time">12:34</span>
-          <div class="badge">1</div>
+          <i class="far fa-comment-alt fa-2x"></i>
         </div>
-        <!-- 3 -->
       </div>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="img/korea.jpg"
-            class="user-component__avatar user-component__avatar"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__tittle">김한국</h4>
-            <!-- 이거는 나중에 다른 페이지에서 쓸것입니다. -->
-            <h6 class="user-component__subtitle">야</h6>
-          </div>
+      <!-- icorn-row -->
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar-alt"></i><span>Calendar</span>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">12:34</span>
-          <div class="badge">99</div>
+        <div class="icon-row__icon">
+          <i class="far fa-flushed"></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-brush"></i><span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-money-check-alt"></i><span>Account</span>
+        </div>
+      </div>
+      <!-- suggestions -->
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="more-suggestions__icon-text">Kakao Story</div>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <div class="more-suggestions__icon-text">Kakao Story</div>
+          </div>
         </div>
       </div>
     </main>
-
     <!-- navigation bar -->
     <nav class="nav">
       <ul class="nav__list">
@@ -108,7 +101,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html"
             ><span class="nav__notification badge">1</span>
-            <i class="fas fa-comment fa-2x"></i
+            <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
