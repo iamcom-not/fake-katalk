@@ -10,3 +10,32 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  background-color: var(--yellow);
+  /* 여기서는 body가 relative */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 122px;
+  /* forwards!! 마지막 속성이 유지됨 */
+  /* 눈으로 볼 수는 없지만 꼐속 유지됨 */
+  /* 그래서 위에 visibility:hidden함 마우스로 클릭 할 수 있도록 */
+  /* 하지만 html상에서 완전히 사라진게 아니기 때문에 그런걸 하려면 javascript를 사용해야함 */
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 1.2s;
+}

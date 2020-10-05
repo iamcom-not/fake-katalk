@@ -93,3 +93,23 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  /* 뭘 변화할지 말해줘서 변화가 잘되게 만듬 */
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
